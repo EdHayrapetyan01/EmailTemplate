@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>EmailTemplate</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #logo {
+            width: 50%;
+            margin: 0 auto;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        #logo p {
+            color: #333333;
+            font-size: 30px;
+        }
+        
+        #logo .logoTxt {
+            margin-top: -13px;
+        }
+        
+        body,
+        .body-wrap {
+            width: 100% !important;
+            background: #ebebeb;
+        }
+        
+        a {
+            color: #71bc37;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .text-left {
+            text-align: left;
+        }
+        
+        .button {
+            display: inline-block;
+            color: white;
+            background: #71bc37;
+            border: solid #71bc37;
+            border-width: 10px 20px 8px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+        
+        .button:hover {
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-bottom: 20px;
+            line-height: 1.25;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        
+        h3 {
+            font-size: 24px;
+        }
+        
+        h4 {
+            font-size: 20px;
+        }
+        
+        h5 {
+            font-size: 16px;
+        }
+        
+        p,
+        ul,
+        ol {
+            font-size: 16px;
+            font-weight: normal;
+            /* margin-bottom: 20px; */
+        }
+        
+        img {
+            width: 209px;
+        }
+        
+        .container {
+            display: block !important;
+            clear: both !important;
+            margin: 0 auto !important;
+            max-width: 780px !important;
+        }
+        
+        .container table {
+            width: 100% !important;
+            border-collapse: collapse;
+        }
+        
+        .container .Rectangle-1093 {
+            height: 70px;
+            background-color: #f3f3f3;
+            color: white;
+        }
+        
+        .container .masthead h1 {
+            margin: 0 auto !important;
+            max-width: 90%;
+            text-transform: uppercase;
+        }
+        
+        .container .Rectangle-1095 {
+            width: 779px;
+            height: 498px;
+            background-color: #ffffff;
+        }
+        
+        .mainContent {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 35px;
+            text-align: center;
+        }
+        
+        .container .content.base {
+            background: #22272d;
+            height: 199px;
+        }
+        
+        .container .content.base1 {
+            background-color: #15181c;
+            height: 59px;
+        }
+        
+        @import url(http://fonts.googleapis.com/css?family=Montserrat);
+        .mainTxT {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: lighter;
+            font-size: 40px;
+            color: #bd9d5f;
+        }
+        
+        h4 {
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #707070;
+            font-family: 'Montserrat';
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: center;
+            margin-top: 16px;
+        }
+        
+        .mainContentText {
+            color: grey;
+        }
+        
+        .secondContent {
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        
+        .secondContent h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: lighter;
+            font-size: 28px;
+            line-height: 20px;
+            color: #bd9d5f;
+        }
+        /* FooterPart */
+        
+        .container .content.footer p {
+            margin-bottom: 0;
+            color: #888;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .container .content.footer a {
+            color: #888;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .container .content.footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .icons {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .icons a {
+            color: #00bac9;
+            width: 20px;
+            height: 20px;
+            font-size: 35px;
+            margin-left: 15px;
+        }
+        
+        span {
+            color: #00bac9
+        }
+        
+        span .txt {
+            color: #00bac9
+        }
+        
+        span a {
+            color: #00bac9;
+        }
+        
+        h1 {
+            font-size: 28px;
+            color: #bd9d5f;
+            margin-top: 19px;
+            margin-bottom: 4px;
+            font-family: Montserrat;
+            font-weight: lighter;
+        }
+        
+        .contact {
+            font-family: Montserrat;
+            font-size: 20px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: center;
+            color: #bd9d5f;
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+        
+        .txtC {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.25;
+            color: #fff;
+            margin-top: 10px;
+        }
+        
+        .Carrier-Community p {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.25;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="body-wrap">
+        <tr>
+            <td class="container">
+                <table>
+                    <tr>
+                        <td align="center" class="Rectangle-1093">
+                            <img src="https://files.slack.com/files-pri/T7C0NQM29-FHTNN5XEY/image_from_ios.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="Rectangle-1095">
+                            <div class="mainContent">
+                                <p class="mainTxT">WELCOME TO CARRIER COMMUNITY</p>
+                                <h4>The global community for telecom industry</h4>
+                                <p class="mainContentText"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga in, libero accusamus molestias iure blanditiis error minus ipsa debitis impedit voluptas quo?
+                                    <span>obcaecati molestias</span> Quam, assumenda. Atque commodi, id quos illo quas dicta rerum Lorem ipsum dolor sit amet. esse fuga quae ad sapiente labore facere porro deleniti ab excepturi ipsum voluptatem necessitatibus
+                                    adipisci? Error perferendis qui consectetur rem dicta quis nesciunt recusandae quam
+                                </p>
+
+                                <h1>LOREM</h1>
+                                <p class="mainContentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod lorem vehicula diam gravida consectetur. Morbi id sapien leo. Mauris urna arcu, luctus in eros ac, consequat vestibulum felis. Fusce sed lorem nisl.
+                                    Nunc mauris lectus, laoreet in vestibulum non, pharetra ac dui. Suspendisse auctor molestie risus vitae aliquet. Nunc ligula neque, viverra eget tellus in, tincidunt porta mauris.
+                                </p>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="container">
+                <table>
+                    <tr>
+                        <td class="content base" align="center">
+                            <div class="infoPage">
+                                <p class="contact">Contact Us</p>
+                                <p class="txtC">General inquiries</p>
+                                <span><p class="txt">info@carriercommunity.com</p></span>
+
+                                <p class="txtC">Events inquiries/Sales Department</p>
+                                <span><p class="txt">events@carriercommunity.com</p></span>
+                            </div>
+                            <div class="icons">
+                                <a href="facebook.com" target="_blank"> <i class="fab fa-facebook"></i></a>
+                                <a href="facebook.com" target="_blank"> <i class="fab fa-twitter-square"></i></a>
+                                <a href="facebook.com" target="_blank"> <i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <td class="content base1" align="center">
+
+                        <div class="Carrier-Community">
+                            <p>Carrier-Community GmbH & Co. KG</p>
+                            <p>Hochwaldsteig-23-14089-Berlin-Germany</p>
+                            <span> <a href="#">carriercommunity.com</a></span>
+                        </div>
+                    </td>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
